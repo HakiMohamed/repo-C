@@ -5,7 +5,7 @@ int main() {
     
     printf("veuiller saisir la valeur du A : ");
     scanf("%d",&A);
-    printf("veuiller saisir la valeur du A : ");
+    printf("veuiller saisir la valeur du B : ");
     scanf("%d",&B);
     printf(" A + B = %d \n",A+B);
     printf(" A - B = %d \n",A-B);
