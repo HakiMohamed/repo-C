@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
+
+
 int main() {
     double result = 0; 
     char operator;
@@ -15,7 +18,7 @@ int main() {
         if (operator == 'q') {
             break; 
         }
-Ã 
+
         printf("Entrez un nombre : ");
         scanf("%lf", &value);
 
@@ -33,18 +36,19 @@ int main() {
                 if (value != 0) {
                     result = result / value;
                 } else {
-                    printf("Division par zÃ©ro impossible.\n");
+                    printf("Division par zéro impossible.\n");
                 }
                 break;
             default:
-                printf("OpÃ©ration non reconnue.\n");
+                printf("Opération non reconnue.\n"); //jj
+                
         }
-
+             system("cls");
         printf("Resultat actuel : %.2lf\n", result);
+        
     }
-
+system("cls");
     printf("Resultat final : %.2lf\n", result);
 
     return 0;
 }
-//***********
