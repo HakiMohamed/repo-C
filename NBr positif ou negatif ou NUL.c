@@ -1,19 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 
-int main(){
-	
-	       int N ;
-		 printf("veuiller saisir un nombre : ");
-	       scanf("%d",&N);
-	       
-	       if(N<0)
-	       	 printf("Le nombre %d est un nombre negatif ",N);
-	      else if(N>0)
-	       	 printf("Le nombre %d est un nombre positif ",N);
-	       	 else
-	       	 printf("Le nombre %d est un nombre NUL ",N);
-	       	 return 0;
-	       	 
+int main() {
+    double result = 0; 
+    char operator;
+    double value;
+
+    printf("\n Entrez un nombre : ");
+    scanf("%lf", &result);
+
+    while (1) {
+        printf("\nEntrez l'operation ( + , - , * ,  /  )         ou q pour quitter) : ");
+        scanf(" %c", &operator);
+
+        if (operator == 'q') {
+            break; 
+        }
+
+        printf("Entrez un nombre : ");
+        scanf("%lf", &value);
+
+        switch (operator) {
+            case '+':
+                result = result + value;
+                break;
+            case '-':
+                result = result - value;
+                break;
+            case '*':
+              result = result * value;
+                break;
+            case '/':
+                if (value != 0) {
+                    result = result / value;
+                } else {
+                    printf("Division par zéro impossible.\n");
+                }
+                break;
+            default:
+                printf("Opération non reconnue.\n"); //jj
+                
+        }
+             system("cls");
+        printf("Resultat actuel : %.2lf\n", result);
+        
+    }
+system("cls");
+    printf("Resultat final : %.2lf\n", result);
+
+    return 0;
 }
