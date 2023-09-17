@@ -1,6 +1,6 @@
-#Des exercices en Langage C
+# Des exercices en Langage C
 
-##0bjectif:
+## 0bjectif:
 Nous allons écrire des programmes C simples en utilisant les connaissances des types de données, des opérateurs, des fonctions printf et scanf.
 
 Pré-requis
