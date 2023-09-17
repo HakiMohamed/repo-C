@@ -1,54 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 
 
-int main() {
-    double result = 0; 
-    char operator ;
-    double value;
-
-    printf("\n Entrez un nombre : ");
-    scanf("%lf", &result);
-
-    while (1) {
-        printf("\nEntrez l'operation ( + , - , * ,  /  )         ou q pour quitter) : ");
-        scanf(" %c", &operator);
-
-        if (operator == 'q') {
-            break; 
-        }
-
-        printf("Entrez un nombre : ");
-        scanf("%lf", &value);
-
-        switch (operator) {
-            case '+':
-                result = result + value;
-                break;
-            case '-':
-                result = result - value;
-                break;
-            case '*':
-              result = result * value;
-                break;
-            case '/':
-                if (value != 0) {
-                    result = result / value;
-                } else {
-                    printf("Division par zéro impossible.\n");
-                }
-                break;
-            default:
-                printf("Opération non reconnue.\n"); //jj
-                
-        }
-             system("cls");
-        printf("Resultat actuel : %.2lf\n", result);
-        
-    }
-system("cls");
-    printf("Resultat final : %.2lf\n", result);
-
-    return 0;
+int main(){
+	
+	       float somme,NOTE, A,B,C,D,E,F,I;
+		 printf("veuiller saisir la note obtenue en math  : ");
+	       scanf("%f",&A);
+	       printf("veuiller saisir la note obtenue en arabic  : ");
+	       scanf("%f",&B);
+	       printf("veuiller saisir la note obtenue en francais  : ");
+	       scanf("%f",&C);
+	       printf("veuiller saisir la note obtenue en sport  : ");
+	       scanf("%f",&D);
+	       printf("veuiller saisir la note obtenue en physique  : ");
+	       scanf("%f",&E);
+	       printf("veuiller saisir la note obtenue en science du vie et terre : ");
+	       scanf("%f",&F);
+	       printf("veuiller saisir la note obtenue en anglais  : ");
+	       scanf("%f",&I);
+	       system("cls");
+	       printf("\n");
+	       printf("\n");
+	       printf("\n");
+	       somme = A+B+C+D+E+F+I;
+	       NOTE = somme / 7;
+	       if(NOTE<10)
+	       	 printf("********************************************** NOTE : %.2f [--RECALE---] ******************************************",NOTE);
+	      else if(NOTE>10&&NOTE<12)
+	       	 printf("********************************************** NOTE : %.2f [--PASSABLE---] *****************************************",NOTE);
+	      else if(NOTE>12&&NOTE<14)
+	       	 printf("********************************************** NOTE : %.2f [--ASSEZ BIEN---] ***************************************",NOTE);
+	      else if(NOTE>14&&NOTE<16)
+	       	 printf("********************************************** NOTE : %.2f [--BIEN---] *********************************************",NOTE);	 
+	      else if(NOTE>16)
+	       	 printf("********************************************** NOTE : %.2f [--TRES BIEN---] ****************************************",NOTE);
+	       printf("\n\n");
+	       printf("\n\n");
+	       printf("\n");
+	       	
+	       	 return 0;
+	       	 
 }
