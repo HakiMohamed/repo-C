@@ -28,15 +28,21 @@ houres=jours*24;
 minutes=houres*60;
 secondes=minutes*60;
 printf("\n\n");
+
 	switch(choix){
+		system("cls");
 		case 1 : printf("                        %d annee et contient %d  mois ",annee,mois);
 		break;
+		system("cls");
 		case 2 : printf("                        %d annee et contient %d  jours ",annee,jours);
 		break;
+		system("cls");
 		case 3 : printf("                        %d annee et contient %d  houres ",annee,houres);
 		break;
+		system("cls");
 		case 4 : printf("                        %d annee et contient %d  minutes ",annee,minutes);
 		break;
+		system("cls");
 		case 5 : printf("                        %d annee et contient %d  secondes ",annee,secondes);
 		break;
 }
