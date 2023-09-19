@@ -7,7 +7,7 @@ int main() {
     printf("veuiller saisir le rayon du cercle  :");
     scanf("%f",&R);
     cr = (R * 2) * Pi;    
-    printf("Circonférence est %.2f",cr);
+    printf("CirconfÃ©rence est %.2f",cr);
     
 	
 	
